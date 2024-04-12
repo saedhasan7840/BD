@@ -148,7 +148,7 @@ class login():
 			print('\033[1;36m Token ' + req['access_token'])
 			print(50 * '\033[0m-')
 			open('.token.txt', 'w').write(req['access_token'])
-			exit('run again python main.py')
+			exit('run again python BD.py')
 		else:
 			exit('\033[1;31m Invalid COokie Or Something WEnt WRong')
 	def login_at(self):
@@ -196,7 +196,7 @@ class login():
 				print('\033[1;32m Login Done :-X')
 				print(50 * '\033[0m-')
 				open('.token.txt', 'w').write(token)
-				exit('run again python main.py')
+				exit('run again python BD.py')
 			except Exception as e:
 				print(e)
 				exit(f' \033[1;31minvalid or expire token {uid}\033[0m ')
